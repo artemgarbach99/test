@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+body {
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.nav-scroller {
+    overflow-y: hidden;
+    background-color: #fff;
+    padding: 15px 0;
+}
+.nav-scroller__items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 80px;
+    padding: 0 10px;
+}
+.nav-scroller__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    color: #424242;
+    display: flex;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+.nav-scroller__items::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media screen and (max-width: 998px) {
+    .nav-scroller__items {
+        gap: 30px;
+    } 
+    .nav-scroller__item {
+        border: 1px solid #D9D9D9;
+        border-radius: 3px;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .nav-scroller__items {
+        gap: 15px;
+    } 
+}
+  
+.dropdown {
+position: relative;
+height: 40px;
+}
+
+.dropdown > .caption {
+background-color: transparent;
+display: flex;
+align-items: center;
+padding: 0 16px;
+border-radius: 5px 0px 0px 5px;
+cursor: pointer;
+color: #000;
+height: 100%;
+}
+
+.dropdown > .list {
+position: absolute;
+top: 0;
+left: 51px;
+background-color: #FFFFFF;
+width: auto;
+border-radius: 0px 5px 5px 0px;
+display: none;
+border: 1px solid #EAEAEA;
+z-index: 9;
+padding: 0 20px;
+height: 100%;
+}
+
+.dropdown > .list > .item {
+cursor: pointer;
+position: relative;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+color: #8D8D8D;
+}
+
+.dropdown > .list > .item.selected {
+font-weight: bold;
+}
+
+
+.dropdown.open > .caption {
+background-color: #22B14C;
+color: #FFFFFF;
+}
+
+.dropdown.open > .list {
+display: flex;
+align-items: center;
+gap: 24px;
+}
+
+.item:not(:last-child)::before {
+content: '';
+position: absolute;
+top: 0;
+right: -10px;
+height: 22px;
+width: 1px;
+background-color: #DFDFDF;
+}

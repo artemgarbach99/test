@@ -1,0 +1,80 @@
+﻿@charset "UTF-8";
+/* Не показывать меню, пока страница не закончила грузиться */
+#menu:not(.mm-menu),
+#mm-menu:not(.mm-menu) {
+  display: none;
+}
+
+/* Цвет для заголовка меню "Объявления, Визитки" */
+a.mm-navbar__title {
+  color: white !important;
+  background-color: #429755;
+}
+
+.mm-listitem__btn:hover,
+.mm-listitem__text:hover {
+  color: rgba(0, 0, 0, 0.7) !important;
+  background: #bcf0bb !important;
+}
+
+.mm-menu_theme-green {
+  --mm-color-border: rgba( 0,0,0, 0.1 );
+  --mm-color-button: rgba( 0,0,0, 0.3 );
+  --mm-color-text: rgba( 0,0,0, 0.7 );
+  --mm-color-text-dimmed: rgba( 0,0,0, 0.3 );
+  --mm-color-background: #fff;
+  --mm-color-background-highlight: rgba( 0,0,0, 0.06 );
+  --mm-color-background-emphasis: #429755;
+  --mm-shadow: 0 0 10px rgba( 0,0,0, 0.2 );
+}
+
+.mm-listitem_selected-parent {
+  --mm-color-background: #429755;
+  --mm-color-text: white;
+}
+
+.menu-link-stub {
+  color: lightgray;
+}
+
+.mm-listitem[aria-current=location] > a {
+  font-weight: 600;
+}
+
+/* Не показывать меню, пока страница не закончила грузиться */
+#menu:not(.mm-menu),
+#mm-menu:not(.mm-menu) {
+  display: none;
+}
+
+/* Цвет для заголовка меню "Объявления, Визитки" */
+a.mm-navbar__title {
+  color: white !important;
+  background-color: #429755;
+}
+
+.mm-listitem__btn:hover,
+.mm-listitem__text:hover {
+  color: rgba(0, 0, 0, 0.7) !important;
+  background: #bcf0bb !important;
+}
+
+.mm-menu_theme-green {
+  --mm-color-border: rgba( 0,0,0, 0.1 );
+  --mm-color-button: rgba( 0,0,0, 0.3 );
+  --mm-color-text: rgba( 0,0,0, 0.7 );
+  --mm-color-text-dimmed: rgba( 0,0,0, 0.3 );
+  --mm-color-background: #fff;
+  --mm-color-background-highlight: rgba( 0,0,0, 0.06 );
+  --mm-color-background-emphasis: #429755;
+  --mm-shadow: 0 0 10px rgba( 0,0,0, 0.2 );
+}
+
+.mm-listitem_selected-parent {
+  --mm-color-background: #429755;
+  --mm-color-text: white;
+}
+
+.menu-link-stub {
+  color: lightgray;
+}
